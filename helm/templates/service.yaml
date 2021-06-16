@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     env: prod
-  name: {{ .Chart.name }}-{{ .Chart.appVersion }}
+  name: nginx-{{ .Values.infra }}
   namespace: production
 spec:
   type: NodePort

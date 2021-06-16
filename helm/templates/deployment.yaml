@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     env: prod
-  name: {{ .Chart.name }}-{{ .Chart.appVersion }}
+  name: nginx-{{ .Values.infra }}
   namespace: production
 spec:
   replicas: {{ .Values.replicaCount }}
